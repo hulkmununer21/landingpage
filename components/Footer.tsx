@@ -50,7 +50,7 @@ export default function Footer() {
               <li>Email: {process.env.NEXT_PUBLIC_COMPANY_EMAIL}</li>
               <li>Phone: {process.env.NEXT_PUBLIC_COMPANY_PHONE}</li>
               <li className="pt-2 text-sm">
-                {process.env.NEXT_PUBLIC_COMPANY_ADDRESS}
+               Address: {process.env.NEXT_PUBLIC_COMPANY_ADDRESS}
               </li>
               <li className="pt-2">
                 <span className="text-sm">Global B2B platform for raw materials & consultancy services.</span>

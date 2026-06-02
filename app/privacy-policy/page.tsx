@@ -212,7 +212,8 @@ export default function PrivacyPolicy() {
             <ul>
               <li>Email: {process.env.NEXT_PUBLIC_COMPANY_EMAIL}</li>
               <li>Phone: {process.env.NEXT_PUBLIC_COMPANY_PHONE}</li>
-              <li>Address: Logistics Pro Privacy Team, 123 Main Street, Tech City, TC 12345, USA</li>
+              <li>Address:35530 STEPHANIE STREET
+                APT 204 ROMULUS, MI 48174, USA</li>
             </ul>
           </section>
         </article>
