@@ -1,16 +1,4 @@
 {
-  "env": {
-    "NEXT_PUBLIC_TWILIO_ACCOUNT_SID": "@twilio_account_sid",
-    "TWILIO_AUTH_TOKEN": "@twilio_auth_token",
-    "TWILIO_PHONE_NUMBER": "@twilio_phone_number",
-    "SENDGRID_API_KEY": "@sendgrid_api_key",
-    "SENDGRID_FROM_EMAIL": "@sendgrid_from_email",
-    "SENDGRID_FROM_NAME": "@sendgrid_from_name",
-    "NEXT_PUBLIC_APP_URL": "@app_url",
-    "NEXT_PUBLIC_COMPANY_EMAIL": "@company_email",
-    "NEXT_PUBLIC_COMPANY_PHONE": "@company_phone",
-    "NEXT_PUBLIC_DATA_RETENTION_DAYS": "90"
-  },
   "headers": [
     {
       "source": "/(.*)",
