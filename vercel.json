@@ -1,0 +1,75 @@
+{
+  "env": [
+    {
+      "key": "NEXT_PUBLIC_TWILIO_ACCOUNT_SID",
+      "value": "@twilio_account_sid"
+    },
+    {
+      "key": "TWILIO_AUTH_TOKEN",
+      "value": "@twilio_auth_token"
+    },
+    {
+      "key": "TWILIO_PHONE_NUMBER",
+      "value": "@twilio_phone_number"
+    },
+    {
+      "key": "SENDGRID_API_KEY",
+      "value": "@sendgrid_api_key"
+    },
+    {
+      "key": "SENDGRID_FROM_EMAIL",
+      "value": "@sendgrid_from_email"
+    },
+    {
+      "key": "SENDGRID_FROM_NAME",
+      "value": "@sendgrid_from_name"
+    },
+    {
+      "key": "NEXT_PUBLIC_APP_URL",
+      "value": "@app_url"
+    },
+    {
+      "key": "NEXT_PUBLIC_COMPANY_EMAIL",
+      "value": "@company_email"
+    },
+    {
+      "key": "NEXT_PUBLIC_COMPANY_PHONE",
+      "value": "@company_phone"
+    },
+    {
+      "key": "NEXT_PUBLIC_DATA_RETENTION_DAYS",
+      "value": "90"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=31536000; includeSubDomains"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        }
+      ]
+    }
+  ]
+}
