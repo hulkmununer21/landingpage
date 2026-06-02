@@ -3,11 +3,11 @@ import sgMail from '@sendgrid/mail'
 
 // Initialize SendGrid
 const sendgridApiKey = process.env.SENDGRID_API_KEY
-const fromEmail = process.env.SENDGRID_FROM_EMAIL
-const fromName = process.env.SENDGRID_FROM_NAME
+const fromEmail = process.env.SENDGRID_FROM_EMAIL || 'support@bluehorizonco.com'
+const fromName = process.env.SENDGRID_FROM_NAME || 'Blue Horizon'
 
-if (!sendgridApiKey || !fromEmail) {
-  throw new Error('SendGrid configuration is missing')
+if (!sendgridApiKey) {
+  throw new Error('SendGrid API key is missing')
 }
 
 sgMail.setApiKey(sendgridApiKey)
@@ -53,12 +53,12 @@ export async function POST(request: NextRequest): Promise<NextResponse<EmailResp
       to: body.toEmail,
       from: {
         email: fromEmail,
-        name: fromName || 'Logistics Pro',
+        name: fromName,
       },
       subject: body.subject,
       html: body.htmlContent,
       text: body.textContent,
-      replyTo: process.env.NEXT_PUBLIC_COMPANY_EMAIL,
+      replyTo: process.env.NEXT_PUBLIC_COMPANY_EMAIL || 'support@bluehorizonco.com',
       headers: {
         'X-Tracking-ID': body.trackingId || 'none',
       },

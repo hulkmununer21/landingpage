@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
@@ -56,7 +56,7 @@ const mockTrackingData: { [key: string]: TrackingData } = {
   },
 }
 
-export default function Tracking() {
+function TrackingContent() {
   const searchParams = useSearchParams()
   const initialTrackingId = searchParams.get('id') || ''
 
@@ -302,5 +302,13 @@ export default function Tracking() {
       </main>
       <Footer />
     </>
+  )
+}
+
+export default function Tracking() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <TrackingContent />
+    </Suspense>
   )
 }
