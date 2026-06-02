@@ -1,46 +1,16 @@
 {
-  "env": [
-    {
-      "key": "NEXT_PUBLIC_TWILIO_ACCOUNT_SID",
-      "value": "@twilio_account_sid"
-    },
-    {
-      "key": "TWILIO_AUTH_TOKEN",
-      "value": "@twilio_auth_token"
-    },
-    {
-      "key": "TWILIO_PHONE_NUMBER",
-      "value": "@twilio_phone_number"
-    },
-    {
-      "key": "SENDGRID_API_KEY",
-      "value": "@sendgrid_api_key"
-    },
-    {
-      "key": "SENDGRID_FROM_EMAIL",
-      "value": "@sendgrid_from_email"
-    },
-    {
-      "key": "SENDGRID_FROM_NAME",
-      "value": "@sendgrid_from_name"
-    },
-    {
-      "key": "NEXT_PUBLIC_APP_URL",
-      "value": "@app_url"
-    },
-    {
-      "key": "NEXT_PUBLIC_COMPANY_EMAIL",
-      "value": "@company_email"
-    },
-    {
-      "key": "NEXT_PUBLIC_COMPANY_PHONE",
-      "value": "@company_phone"
-    },
-    {
-      "key": "NEXT_PUBLIC_DATA_RETENTION_DAYS",
-      "value": "90"
-    }
-  ],
+  "env": {
+    "NEXT_PUBLIC_TWILIO_ACCOUNT_SID": "@twilio_account_sid",
+    "TWILIO_AUTH_TOKEN": "@twilio_auth_token",
+    "TWILIO_PHONE_NUMBER": "@twilio_phone_number",
+    "SENDGRID_API_KEY": "@sendgrid_api_key",
+    "SENDGRID_FROM_EMAIL": "@sendgrid_from_email",
+    "SENDGRID_FROM_NAME": "@sendgrid_from_name",
+    "NEXT_PUBLIC_APP_URL": "@app_url",
+    "NEXT_PUBLIC_COMPANY_EMAIL": "@company_email",
+    "NEXT_PUBLIC_COMPANY_PHONE": "@company_phone",
+    "NEXT_PUBLIC_DATA_RETENTION_DAYS": "90"
+  },
   "headers": [
     {
       "source": "/(.*)",
